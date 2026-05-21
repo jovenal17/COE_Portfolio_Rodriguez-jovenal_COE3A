@@ -80,4 +80,4 @@ This portfolio is submitted as the **Final Project requirement for Computer Engi
 
 ---
 
-*© 2026 Jovenal | Computer Engineering – 3rd Year Student*
+*May: 22 :2026 : Jovenal D. Rodriguez| Computer Engineering – 3rd Year Student*
