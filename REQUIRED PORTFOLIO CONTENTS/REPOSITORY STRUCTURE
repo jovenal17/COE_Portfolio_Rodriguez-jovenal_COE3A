@@ -1,0 +1,32 @@
+COE_Portfolio_Jovenal_COE3A/
+│
+├── images/
+│   ├── project1-cpp-calculator.png
+│   ├── project2-python-converter.png
+│   ├── project3-amplifier-circuit.png
+│   ├── project4-cantilever-3dprinter.png
+│   ├── project5-wind-mill.png
+│   └── project6-solar-miniature.png
+│
+├── source/
+│   ├── Project-1-Simple-Calculator-Cpp/
+│   │   ├── main.cpp
+│   │   └── README.md
+│   ├── Project-2-Number-Converter-Python/
+│   │   ├── number_converter.py
+│   │   └── README.md
+│   ├── Project-3-Amplifier-Circuit-Simulation/
+│   │   ├── design-details.txt
+│   │   └── README.md
+│   ├── Project-4-Cantilever-3D-Printer/
+│   │   ├── design-notes.txt
+│   │   └── README.md
+│   ├── Project-5-Wind-Mill-Model/
+│   │   ├── design-notes.txt
+│   │   └── README.md
+│   ├── Project-6-Solar-Miniature-System/
+│   │   ├── design-notes.txt
+│   │   └── README.md
+│   └── Skills-and-Technologies.md
+│
+└── README.md   ← Main file with all info
