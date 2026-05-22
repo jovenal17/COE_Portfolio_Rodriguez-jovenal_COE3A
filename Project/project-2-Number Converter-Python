@@ -1,0 +1,20 @@
+print("=============================")
+print("   NUMBER CONVERTER TOOL     ")
+print("=============================")
+
+# Get input from user
+decimal_num = int(input("Enter a Decimal Number: "))
+
+# Convert to other systems
+binary_num = bin(decimal_num)       # Example: 0b101
+hex_num = hex(decimal_num)          # Example: 0xA
+
+# Display result (remove prefixes)
+print("\n----- FINAL RESULT -----")
+print(f"Decimal      : {decimal_num}")
+print(f"Binary       : {binary_num[2:]}")
+print(f"Hexadecimal  : {hex_num[2:].upper()}")
+
+print("\n=============================")
+print("       PROGRAM ENDED         ")
+print("=============================")
