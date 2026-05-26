@@ -1,19 +1,24 @@
-=== CANTILEVER 3D PRINTER DESIGN ===
-Project: Mechanical Design / Rapid Prototyping
-Course & Section: Computer Engineering – COE3A
+A cantilever 3D printer is a type of 3D printer that uses a single-sided support arm to hold and move the print bed or printing mechanism. Unlike traditional 3D printers that use two support rails or frames on both sides, a cantilever design supports the moving part from only one side.
 
-1. DESIGN CONCEPT:
-   - Cantilever style: Single vertical beam supports X-axis gantry
-   - Compact footprint, simple frame, easy assembly
-   - Build volume: Approx. 200 x 200 x 200 mm
+Features of a Cantilever 3D Printer
+Single-arm support for the X-axis or print bed
+Compact and lightweight design
+Easier to assemble and maintain
+Usually quieter and portable
+Advantages
+Saves space because of its smaller frame
+Lower manufacturing cost
+Good for beginners and small printing projects
+Faster movement due to lighter structure
+Disadvantages
+Less stable for large or heavy prints
+May experience slight wobbling at high speeds
+Limited print size compared to dual-support printers
+Common Uses
 
-2. MAIN COMPONENTS:
-   - Frame: Aluminum extrusion / Acrylic
-   - Motion: NEMA 17 stepper motors, belts & pulleys
-   - Extruder: MK8 style
-   - Electronics: Arduino + RAMPS board
+Cantilever 3D printers are commonly used for:
 
-3. KEY FEATURES:
-   - Open design for easy access
-   - Lightweight structure
-   - Suitable for education and small projects
+Educational projects
+Hobby printing
+Prototype creation
+Small household items and decorations
