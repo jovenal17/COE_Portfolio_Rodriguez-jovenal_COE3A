@@ -114,9 +114,9 @@ Project 6
 📞 CONTACT INFORMATION
  
 - GitHub: https://github.com/jovenal17
-- Email: [Your Email Address]
+- Email: jovenalrodriguez5@gmail.com
  
  
  
-© 2026 Rodriguez Jovenal | Computer Engineering – COE3A
+2026 Rodriguez Jovenal | Computer Engineering – COE3A
  
