@@ -1,0 +1,20 @@
+Project 2: Number Converter (Python)
+*Type:* Programming / Digital Systems
+*Course & Section:* Computer Engineering – COE3A
+
+## 📖 Description
+Converts Decimal numbers to Binary and Hexadecimal. Essential for understanding how computers process data — core topic in Computer Engineering.
+
+## 🛠️ Technologies
+- Language: Python
+- Concept: Number Systems & Digital Logic
+
+## ✨ Features
+- Fast conversion
+- Clean formatted output
+- No prefix codes
+
+## 📚 Learning Outcome
+- Number system relationships
+- Built-in functions usage
+- Software ↔ hardware connection
