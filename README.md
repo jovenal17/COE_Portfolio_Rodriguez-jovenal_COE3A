@@ -2,7 +2,7 @@
  
 Full Name: Rodriguez Jovenal
 Course & Section: Computer Engineering – COE3A
-University / School: [Write Your School Name Here]
+University / School: FULLBRIGHT COLLEGE
  
 📌 SHORT INTRODUCTION / ABOUT ME
  
