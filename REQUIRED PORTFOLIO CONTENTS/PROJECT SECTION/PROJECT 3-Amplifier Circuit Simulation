@@ -1,0 +1,22 @@
+=== COMMON EMITTER AMPLIFIER DESIGN ===
+Project: Electronics Circuit Design
+Course & Section: Computer Engineering – COE3A
+
+1. COMPONENTS:
+   - Q1: 2N3904 NPN Transistor
+   - R1: 10 kΩ
+   - R2: 2.2 kΩ
+   - Rc: 2.2 kΩ
+   - Re: 470 Ω
+   - C1, C2: 10 µF
+   - Ce: 100 µF
+   - Vcc: 12 V DC
+
+2. CALCULATIONS:
+   - Vb = 12 × (2.2 / 12.2) = 2.16 V
+   - Ve = Vb – 0.7 V = 1.46 V
+   - Ie = Ve / Re = 3.1 mA
+   - Gain Av ≈ -Rc/Re = -4.7
+
+3. RESULT:
+   Signal amplified ~4.7 times, inverted phase. Stable operation.
