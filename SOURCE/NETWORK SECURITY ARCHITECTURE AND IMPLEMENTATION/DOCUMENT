@@ -1,0 +1,90 @@
+## 1.0 PROJECT OVERVIEW
+This documentation details the design, hardening, and monitoring of a secure virtualized network infrastructure for ALCRC Corp. It was developed as part of a network security project to demonstrate how enterprise networks can be designed, secured, and monitored against modern threats.
+
+The implementation follows a structured lifecycle:
+1. Network Topology Design
+2. IP Address Planning
+3. Security Hardening
+4. Traffic Monitoring & Intrusion Detection
+5. Threat Response & Incident Logging
+
+---
+
+## 2.0 NETWORK DESIGN & IP ADDRESSING PLAN
+
+### 2.1 Network Segmentation
+To ensure security and isolation, the network was divided into two main segments:
+
+| Segment Name       | IP Address Range   | Purpose                          |
+|--------------------|--------------------|----------------------------------|
+| External / WAN     | 192.168.1.0/24  | Simulated public/internet side   |
+| Internal LAN / Vault | 10.0.0.0/24    | Private corporate network, servers, and endpoints |
+
+### 2.2 Infrastructure Layout
+- *Datacenter Node:* Runs hypervisor, hosts Ubuntu Server, XAMPP services, and OPNsense VM
+- *Network Admin Node:* Used for configuration, rule management, and monitoring
+- *Traffic Monitor Node:* Runs Wireshark and Nmap for analysis
+- *Employee Endpoints:* 3 workstations simulating daily user activity
+- *Wireless Access:* Secure SSID: ALCRC Corp (NETSEC - Group1)
+
+---
+
+## 3.0 SECURITY HARDENING PROCEDURES
+
+### 3.1 Firewall Configuration (OPNsense)
+- Default deny all inbound traffic
+- Explicit allow rules only for required services (HTTP, HTTPS, DNS)
+- Stateful inspection enabled
+- Blocked all unused ports and protocols
+
+### 3.2 Access Control
+- Role-based access for admin interfaces
+- Strong password policies enforced
+- SSH access limited to specific management IPs
+- Disabled unnecessary services and accounts
+
+### 3.3 Credential Management
+- All devices use unique local credentials
+- Password complexity requirements applied
+- No default or shared passwords used
+
+---
+
+## 4.0 TRAFFIC MONITORING & INTRUSION DETECTION
+
+### 4.1 Suricata IDS Deployment
+- Installed and configured within OPNsense
+- Ruleset: emerging-sql (focused on database and web-based threats)
+- Logging enabled to capture all alerts and suspicious activity
+- Alert severity levels defined (Info → Critical)
+
+### 4.2 Traffic Analysis Tools
+- *Nmap:* Used to verify open ports, detect running services, and audit firewall effectiveness
+- *Wireshark:* Full packet capture capability on both WAN and LAN segments; used for deep-dive analysis
+- *Windows Defender:* Enabled on all endpoints with real-time protection and host firewall active
+
+---
+
+## 5.0 THREAT RESPONSE & INCIDENT LOGGING
+
+### 5.1 Logging Mechanisms
+- Centralized log collection from firewall, IDS, and servers
+- Logs include: source/dest IP, timestamp, protocol, port, and alert message
+- Retention policy: logs kept for review and analysis
+
+### 5.2 Incident Response Process
+1. Alert generation → Real-time notification
+2. Investigation → Analyze packet captures and logs
+3. Containment → Update rules or block malicious IPs
+4. Documentation → Record incident details and resolution
+
+---
+
+## 6.0 TECHNOLOGY SUMMARY
+| Component               | Purpose                                      |
+|-------------------------|----------------------------------------------|
+| OPNsense                | Routing, firewall, IDS                       |
+| Ubuntu Server + XAMPP   | Internal web and database services            |
+| Suricata                | Signature-based intrusion detection          |
+| Nmap / Wireshark        | Validation, mapping, and traffic analysis    |
+| Windows Defender        | Endpoint protection                          |
